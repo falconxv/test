@@ -4,10 +4,6 @@ metadata:
   name: falcon-ingress
   namespace: staging
 spec:
-  tls:
-  - hosts:
-    - "falcon.tonguru.com"
-    secretName: tls-secret
   rules:
   - host: falcon.tonguru.com
     http:
