@@ -9,19 +9,6 @@ spec:
     http:
       paths:
       - backend:
-          serviceName: falcon-webapp-service
-          servicePort: 80
-  
-  - host: tomcat.falcon.tonguru.com
-    http:
-      paths:
-      - backend:
-          serviceName: tomcat
-          servicePort: 8080
-    
-  - host: phpmyadmin.falcon.tonguru.com
-    http:
-      paths:
-      - backend:
-          serviceName: phpmyadmin
-          servicePort: 80
+          service:
+            name: falcon-webapp-service
+            port: 80
